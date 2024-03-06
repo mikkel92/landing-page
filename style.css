@@ -71,13 +71,17 @@ TABLE OF CONTENT
   --ui-color-typography-note   : var(--ui-color-n-300);
   --ui-color-typography-button : var(--ui-color-n-000);
 
+  /* HEADER COLOR */
+
+  --ui-color-navbar: rgb(21, 100, 164);
+
   /*------------------------------------------------------------
   |
   | 1.2 TYPOGRAPHY
   |
   ------------------------------------------------------------*/
 
-  --ui-typography-typeface: "Inter", sans-serif;
+  --ui-typography-typeface: "Lato", sans-serif;
 
   /* FONT SIZE */
 
@@ -143,7 +147,7 @@ body {
   font-family: var(--ui-typography-typeface);
   font-feature-settings: "liga", "kern";
   font-size: var(--ui-typography-p);
-  font-weight: 400;
+  font-weight: 300;
   line-height: var(--ui-typography-p-leading);
   margin: 0 auto;
   text-rendering: optimizeLegibility;
@@ -372,7 +376,7 @@ header{
   padding-bottom: 1.25rem;
   padding-top: 1.25rem;
   
-  background-color:steelblue;
+  background-color: var(--ui-color-navbar);
 }
 
 .ui-section-header__layout { justify-content: space-between; }
@@ -424,7 +428,7 @@ header{
 /* MENU */
 
 .ui-section-header--nav {
-  background-color:steelblue;
+  background-color: var(--ui-color-navbar);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
   flex-direction: column;
   gap: var(--ui-gap-header);
@@ -717,6 +721,7 @@ header{
     column-gap: var(--ui-layout-gutter);
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    
   }
 
   .ui-layout-grid-3 div:nth-of-type(3) {
@@ -1076,14 +1081,14 @@ header{
 
 .services-box{
   /* margin-bottom: 75px !important; */
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 1%;
+  padding-right: 1%;
   padding-top: 1%;
   padding-bottom: 1%;
 }
 
 .image-corner-rounded{
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .background-grey{
@@ -1142,6 +1147,7 @@ header{
 
 .mobile-header-font-size{
   font-size: 80px;
+  font-weight: 200;
   @media screen and (max-width: 505px) {  
       font-size: 40px;
   }
@@ -1149,10 +1155,15 @@ header{
 
 .projects-table{
   margin-bottom: 100px;
+  
+
 }
 
 .projects-table-row{
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 30px solid transparent;
+
 }
 
 .projects-table-logo{
